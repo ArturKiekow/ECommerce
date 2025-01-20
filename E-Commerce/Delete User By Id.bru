@@ -1,0 +1,20 @@
+meta {
+  name: Delete User By Id
+  type: http
+  seq: 5
+}
+
+delete {
+  url: http://localhost:8080/users/053e377b-add5-4ce2-836d-717c5c4795ad
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "fullName": "Artur kiekow Ferreira",
+    "address": "rua gigolas",
+    "number": "123",
+    "complement": "perto do mercado"
+  }
+}
